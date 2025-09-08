@@ -1,0 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
+<h1 class="text-xl font-bold mb-4">Add Employee</h1>
+@include('employees.form', ['route' => route('employees.store'), 'method' => 'POST'])
+@endsection
